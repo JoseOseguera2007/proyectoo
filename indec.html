@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honduras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!-- Tipografía -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Fondo blanco para el resto del contenido */
+            font-family: 'Lobster', cursive; /* Tipografía del cuerpo */
+        }
+
+        /* Estilo de la primera sección */
+        .hero {
+            height: 100vh; /* Altura completa de la ventana */
+            background-image: url("imagenes/fondo1.jpg"); /* Ruta correcta a la imagen */
+            background-size: cover; /* La imagen cubrirá todo el fondo */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            display: flex; /* Permite centrar el contenido */
+            flex-direction: column; /* Coloca los elementos en columna */
+            justify-content: center; /* Centra verticalmente */
+            align-items: center; /* Centra horizontalmente */
+        }
+
+        /* Estilo del menú */
+        .menu {
+            position: fixed; /* Fijo en la parte superior */
+            top: 0;
+            left: 0;
+            width: 100%; /* Ancho completo */
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad */
+            display: flex; /* Usar flexbox para el menú */
+            justify-content: center; /* Centra los elementos en el menú */
+            padding: 15px 0; /* Espaciado vertical */
+            z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
+        }
+
+        /* Estilo de los enlaces */
+        .menu a {
+            color: white; /* Color del texto */
+            text-decoration: none; /* Sin subrayado */
+            margin: 0 50px; /* Espaciado entre enlaces */
+            font-family: 'Lobster', cursive; /* Tipografía del menú */
+            font-size: 1.5em; /* Tamaño de la fuente */
+            transition: color 0.3s; /* Efecto suave al cambiar de color */
+        }
+
+        /* Efecto al pasar el ratón por encima */
+        .menu a:hover {
+            color: #12bff3; /* Cambia el color al pasar el ratón */
+        }
+
+        /* Estilo del título */
+        h1 {
+            color: white; /* Color del texto */
+            font-family: 'Lobster', cursive; /* Tipografía personalizada */
+            font-size: 9em; /* Tamaño de la fuente */
+            text-align: center; /* Centra el texto */
+            position: relative; /* Necesario para el pseudo-elemento */
+            text-shadow: 
+                -1px -1px 0 black,  
+                 1px -1px 0 black,
+                -1px  1px 0 black,
+                 1px  1px 0 black; /* Sombra negra alrededor del texto */
+            margin-top: 100px; /* Espacio para que no se superponga con el menú */
+        }
+
+        /* Estilo de las secciones */
+        .section {
+            height: 100vh; /* Altura completa de la ventana */
+            background-size: cover; /* La imagen cubrirá todo el fondo */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            display: flex; /* Permite centrar el contenido */
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente */
+            flex-direction: column; /* Coloca los elementos en columna */
+            padding-top: 100px; /* Espacio superior para el menú fijo */
+        }
+
+        /* Fondo oscuro y transparente para el contenido de cada sección */
+        .section-content {
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro y transparente */
+            padding: 20px; /* Espacio interno */
+            border-radius: 10px; /* Bordes redondeados */
+            text-align: center; /* Centra el texto */
+            max-width: 800px; /* Ancho máximo para el contenido */
+        }
+
+        /* Estilo del texto en cada sección */
+        .section h2 {
+            font-size: 5em;
+            color: white; /* Tamaño del texto */
+            text-shadow: 2px 2px 4px black; /* Sombra para mejorar legibilidad */
+            margin: 0; /* Eliminar márgenes */
+        }
+
+        .section p {
+            font-size: 1.2em; /* Tamaño del texto */
+            color: white; /* Color del texto */
+            text-shadow: 1px 1px 2px black; /* Sombra para mejorar legibilidad */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#historia">HISTORIA</a>
+        <a href="#destinos">DESTINOS TURÍSTICOS</a>
+        <a href="#geografia">GEOGRAFÍA</a>
+        <a href="#futbol">FÚTBOL</a>
+        <a href="#inicio">VOLVER A INICIO</a> <!-- Opción de menú para volver a la sección 1 -->
+    </div>
+
+    <div class="hero" id="inicio"> <!-- Se añadió el id "inicio" -->
+        <h1>HONDURAS</h1>
+    </div>
+
+    <div class="section historia" id="historia" style="background-image: url('imagenes/bandera.jpg');">
+        <div class="section-content">
+            <h2>Historia de Honduras</h2>
+            <p>La historia de Honduras, país ubicado en el centro de América Central, se remonta a unos 14 000 años (conforme al consenso de Clovis), en que se estima ocurrieron los primeros asentamientos de pobladores sedentarios en el país. Resalta en la historia geológica de Honduras el hecho de poseer el único reporte de fósiles de dinosaurios de América Central. Antes de la conquista por los españoles en el siglo XVI, lo que ahora es Honduras fue habitado por pueblos de culturas que interactuaron entre ellos en diverso grado, en el tiempo y el territorio. De aquella época sobresalen las influencias culturales mesoamericanas, más en concreto la cultura olmeca, la tolteca y la maya. Además de diversos pueblos relacionados con los grupos de influencia caribeña como los Pech, Tolupan, y Tawakhas.</p>
+        </div>
+    </div>
+
+    <div class="section destinos" id="destinos" style="background-image: url('imagenes/dest.jpg');">
+        <div class="section-content">
+            <h2>Destinos Turísticos de Honduras</h2>
+            <p>Honduras ofrece una variedad de destinos turísticos que van desde playas paradisíacas en la costa caribeña, como las Islas de la Bahía, hasta sitios arqueológicos de la cultura maya en Copán. También se destacan parques nacionales como La Tigra y Pico Bonito, ideales para los amantes de la naturaleza y el ecoturismo.</p>
+        </div>
+    </div>
+
+    <div class="section geografia" id="geografia" style="background-image: url('imagenes/geo.jpg');">
+        <div class="section-content">
+            <h2>Geografía de Honduras</h2>
+            <p>Honduras se caracteriza por su diversidad geográfica, con montañas, selvas, llanuras y costas. El país cuenta con varias cadenas montañosas, como la Sierra de Omoa, y es atravesado por ríos importantes como el Ulúa y el Choluteca. Su clima varía según la región, siendo tropical en la costa y templado en las montañas.</p>
+        </div>
+    </div>
+
+    <div class="section futbol" id="futbol" style="background-image: url('imagenes/h.jpg');">
+        <div class="section-content">
+            <h2>Fútbol en Honduras</h2>
+            <p>El fútbol es el deporte más popular en Honduras, con una gran pasión por los equipos locales como el Club Deportivo Olimpia y el Club Deportivo Motagua. La selección nacional ha participado en varias Copas del Mundo, destacándose por su dedicación y esfuerzo en el campo de juego.</p>
+        </div>
+    </div>
+</body>
+</html>
+
